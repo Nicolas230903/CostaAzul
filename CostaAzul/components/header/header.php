@@ -1,6 +1,6 @@
 <div class="w-full h-full" id="header">
   <div class="hero min-h-full h-full" style="background-image: url(../images/Banner-1.png)">
-    <navbar-component class="h-full w-full" src="./components/navbar/navbar.html"></navbar-component>
+    <navbar-component class="h-full w-full" src="./components/navbar/navbar.php"></navbar-component>
     <div class="hero-content flex-col lg:flex-row">
       <img src="../images/local.jpg" class="md:max-w-md rounded-lg shadow-2xl  w-3/4" />
 

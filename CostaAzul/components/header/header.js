@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
 	}
 
 	connectedCallback() {
-		fetch("./components/header/header.html")
+		fetch("./components/header/header.php")
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(

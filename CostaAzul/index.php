@@ -23,7 +23,7 @@
   <servicios-component id="services" class="flex w-full h-auto md:h-[200%]"></servicios-component>
   <nosotros-component id="nosotros" class="w-auto h-auto md:h-[250%]"></nosotros-component>
   <contacto-component id="contacto" class="w-auto  h-auto md:h-[100%]"></contacto-component>
-  <footer-component class="w-auto h-auto lg:h-[100%] " src="../components/footer/footer.html"></footer-component>
+  <footer-component class="w-auto h-auto lg:h-[100%] "></footer-component>
 </body>
 
 </html>

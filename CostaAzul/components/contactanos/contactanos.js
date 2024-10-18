@@ -4,7 +4,7 @@ class ContactoComponent extends HTMLElement {
 	}
 
 	connectedCallback() {
-		fetch("./components/contactanos/contactanos.html")
+		fetch("./components/contactanos/contactanos.php")
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(

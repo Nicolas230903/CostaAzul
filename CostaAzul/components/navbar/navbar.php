@@ -34,7 +34,7 @@
       <div class="flex-none text-white">
         <ul class="menu menu-horizontal px-1">
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="base-path/#nosotros">INICIO</a></li>
-          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="base-path/#services">PRODUCTOS</a></li>
+          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="../Productos/Productos.php">PRODUCTOS</a></li>
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="base-path/#contacto">NOSOTROS</a></li>
       </div>
     </div>

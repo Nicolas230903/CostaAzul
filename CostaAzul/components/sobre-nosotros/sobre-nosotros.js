@@ -4,11 +4,11 @@ class NosotrosComponent extends HTMLElement {
 	}
 
 	connectedCallback() {
-		fetch("./components/sobre-nosotros/sobre-nosotros.html")
+		fetch("./components/sobre-nosotros/sobre-nosotros.php")
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(
-						`Error al cargar el archivo sobre-nosotros.html: ${response.statusText}`,
+						`Error al cargar el archivo sobre-nosotros.php: ${response.statusText}`,
 					);
 				}
 				return response.text();

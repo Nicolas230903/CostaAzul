@@ -4,11 +4,11 @@ class ServiciosComponent extends HTMLElement {
 	}
 
 	connectedCallback() {
-		fetch("./components/servicios/nuestro-servicios.html")
+		fetch("./components/servicios/nuestro-servicios.php")
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(
-						`Error al cargar el archivo navbar-content.html: ${response.statusText}`,
+						`Error al cargar el archivo navbar-content.php: ${response.statusText}`,
 					);
 				}
 				return response.text();

@@ -106,7 +106,7 @@
           </p>
           <div class="card-actions justify-end">
             
-              <a class="btn btn-primary px-4" href="./servicios/seguros.html" class="text-white">Ver más</a>
+              <a class="btn btn-primary px-4" href="./servicios/seguros.php" class="text-white">Ver más</a>
         
           </div>
         </div>

@@ -4,8 +4,7 @@ class FooterComponent extends HTMLElement {
     }
     
     connectedCallback() {
-        const componentPath = this.getAttribute("src");
-        fetch(componentPath)
+        fetch("./components/footer/footer.php")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(
