@@ -22,4 +22,4 @@ class ProductosComponent extends HTMLElement {
   }
 }
 
-customElements.define("Productos-component", ProductosComponent);
+customElements.define("productos-component", ProductosComponent);

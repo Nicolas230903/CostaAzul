@@ -1,3 +1,15 @@
+<?php
+include_once('../../Conexion/conexion.php');
+
+    $pdo = conectar();
+    $GetProd = $pdo->prepare("SELECT * from Productos");
+    $GetProd->execute();
+
+    $lista = $GetProd->fetchAll(PDO::FETCH_ASSOC);
+    foreach($lista as $row){
+
+    }
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,10 +51,10 @@
     }
 
     /* Título o caption */
-    .figcapt {
+    .figcaptu {
       font-size: 18px;
       font-weight: bold;
-      color: #f7952e;
+      color: black;
       margin: 10px 0;
       text-align: left;
       padding-left: 10px; /* Un poco más a la izquierda */
@@ -109,13 +121,15 @@
 </head>
 <body>
   <div class="row">
+
+
     <!-- Card 1 -->
     <div class="card-prod">
-      <figcaption class="figcapt">
-        Nórdica
+      <figcaption class="figcaptu">
+         <?php echo $row['Codigo'] ?>
       </figcaption>
       <div class="img-container">
-        <img src="./images/nordica.png" alt="Imagen de Nórdica" />
+        <img src="<?php echo $row['Imagen'] ?>" alt="Imagen de Nórdica" />
         <div class="overlay">
           <a class="btn" href="components/Productos/Nordicas.php">más info</a>
         </div>
