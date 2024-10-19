@@ -1,3 +1,9 @@
+<?php 
+// Si necesitas incluir archivos PHP, lo puedes hacer aquí.
+// Por ejemplo, si tienes un archivo de configuración:
+// require_once('config.php'); 
+?>
+
 <!DOCTYPE html>
 <html lang="es" data-theme="garden">
 
@@ -22,7 +28,7 @@
   <header-component class="flex w-full h-full"></header-component>
   <servicios-component id="services" class="flex w-full h-auto md:h-[200%]"></servicios-component>
   <nosotros-component id="nosotros" class="w-auto h-auto md:h-[250%]"></nosotros-component>
-  <contacto-component id="contacto" class="w-auto  h-auto md:h-[100%]"></contacto-component>
+  <contacto-component id="contacto" class="w-auto h-auto md:h-[100%]"></contacto-component>
   <footer-component class="w-auto h-auto lg:h-[100%] "></footer-component>
 </body>
 
