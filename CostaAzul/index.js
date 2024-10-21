@@ -1,1 +1,1 @@
-const BASEPATH = "https://estudiointegralgene.com.ar";
+const BASEPATH = "https://CostaAzul.com.ar";

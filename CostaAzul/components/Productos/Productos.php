@@ -135,6 +135,30 @@
       </div>
     </div>
 
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Colgantes
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Colgantes
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Puedes agregar más cards aquí con el mismo estilo -->
   </div>
 </body>

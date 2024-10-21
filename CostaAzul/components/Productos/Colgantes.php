@@ -149,6 +149,20 @@ include_once('../../Conexion/conexion.php');
       </div>
     </div>
 
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Nordicas
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="components/Productos/Nordicas.php">más info</a>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- Puedes agregar más cards aquí con el mismo estilo -->
   </div>
 </body>

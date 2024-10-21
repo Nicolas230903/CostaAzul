@@ -18,6 +18,9 @@
             <li><a href="Components/Productos/Productos.php">INICIO</a></li>
             <li><a href="Components/Productos/Productos.php">PRODUCTOS</a></li>
             <li><a href="Components/Productos/Productos.php">NOSOTROS</a></li>
+            <li><a href="Components/Productos/Galeria.php">GALERIA</a></li>
+            <li><a href="Components/Productos/Contactanos.php">CONTACTENOS</a></li>
+            <li><a href="?login=1" class="btn btn-primary">LOG IN</a></li>
           </ul>
         </div>
       </div>
@@ -37,6 +40,8 @@
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components\InicioSession\incioSession.php">INICIO SESSION</a></li>
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Productos.php">PRODUCTOS</a></li>
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Productos.php">NOSOTROS</a></li>
+          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Galeria.php">GALERIA</a></li>
+          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Contactanos.php">CONTACTENOS</a></li>
         </ul>
       </div>
     </div>
