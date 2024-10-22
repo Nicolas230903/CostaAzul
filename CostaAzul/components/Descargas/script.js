@@ -1,6 +1,25 @@
-// script.js
-document.querySelectorAll('a[download]').forEach(button => {
-    button.addEventListener('click', () => {
-        alert('¡Gracias por descargar el catálogo!');
-    });
-});
+class DescargasComponent extends HTMLElement {
+    constructor() {
+        super();
+    }
+    
+    connectedCallback() {
+        fetch("./components/Descargas/Descargas.php")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(
+                        `Error al cargar el archivo ${componentPath}: ${response.statusText}`,
+                    );
+                }
+                return response.text();
+            })
+      .then((html) => {
+        this.innerHTML = html;
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+    }
+  }
+  
+  customElements.define("descargas-component", ProductosComponent);

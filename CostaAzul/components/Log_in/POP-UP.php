@@ -1,6 +1,16 @@
 <?php if (isset($_GET['login'])): ?>
+
+<?php endif; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
   
-  <div class="modal modal-open">
+<div class="modal modal-open">
     <div class="modal-box p-8 rounded-lg shadow-lg bg-white">
       <div class="flex flex-col items-center justify-center">
         
@@ -48,4 +58,5 @@
       </div>
     </div>
   </div>
-<?php endif; ?>
+</body>
+</html>

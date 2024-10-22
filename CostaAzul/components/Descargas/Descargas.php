@@ -34,8 +34,6 @@
         </div>
     </div>
 
-    <!-- Archivo JS -->
-    <script src="script.js"></script>
 </body>
 
 </html>

@@ -97,7 +97,7 @@
             <div class="p-1">
               <div class="map_main">
                 <div class="map-responsive">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6543.94234013059!2d-58.37306600000001!3d-34.907173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2b0063cad025%3A0x2eaffecaaeb577aa!2sEstudio%20integral%20gene!5e0!3m2!1ses-419!2sar!4v1724270130623!5m2!1ses-419!2sar"
+                  <iframe src=""
                         width="600" height="463" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
                 </div>
               </div>
