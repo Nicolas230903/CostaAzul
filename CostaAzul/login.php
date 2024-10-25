@@ -2,12 +2,12 @@
 require_once("Conexion/conexion.php"); 
 
 if ( $_SERVER["REQUEST_METHOD"] == "POST") {
-	$usuario=$_POST['nombre'];
-	$contrasena=$_POST['apellido'];
+	$email=$_POST['email'];
+	$password=$_POST['password'];
 	
 	$pdo = conectar();
 		
-	$abm_Login = $pdo->prepare("SELECT * FROM Usuarios where nombre ='$usuario' and contrasenausuario='$contrasena'");
+	$abm_Login = $pdo->prepare("SELECT * FROM Usuarios where Email ='$email' and Password='$password'");
 
 	$abm_Login->execute();
 
@@ -15,14 +15,17 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST") {
 		setcookie("login", 										"ok", time()+30*24*60*60, "/", "",  0);
 		setcookie("Usuario_ID", 	   					$row_Usuario['Usuario_ID'], time()+30*24*60*60, "/", "",  0);
 		setcookie("nombre", 									$row_Usuario['Nombre'], time()+30*24*60*60, "/", "",  0);
-		setcookie("apelldio", 						$row_Usuario['nivelusuario'], time()+30*24*60*60, "/", "", 0);
-
+		setcookie("apellido", 						$row_Usuario['apellido'], time()+30*24*60*60, "/", "", 0);
+		setcookie("CUIT", 						$row_Usuario['CUIT'], time()+30*24*60*60, "/", "", 0);
+		setcookie("DNI", 						$row_Usuario['DNI'], time()+30*24*60*60, "/", "", 0);
+		setcookie("Email", 						$row_Usuario['Email'], time()+30*24*60*60, "/", "", 0);
+		setcookie("Nivel", 						$row_Usuario['Nivel'], time()+30*24*60*60, "/", "", 0);
 	};
 
-	if ($_COOKIE['idusuario'] == ""){
-			header("location:index.php?error=2");
+	if ($_COOKIE['Usuario_ID'] == ""){
+			header("location:index.php?error=256");
 	} else {
-		header("location:switch.php");
+		header("Location: index.php?nivel=" . urlencode($row_Usuario['Nivel']));
 	};
 
 };

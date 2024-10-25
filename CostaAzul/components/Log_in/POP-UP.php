@@ -1,6 +1,4 @@
-<?php if (isset($_GET['login'])): ?>
 
-<?php endif; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +17,7 @@
        
         <h2 class="font-bold text-2xl mb-6 text-center text-primary">Iniciar Sesión</h2>
 
-        <form action="login.php" method="POST" class="w-full max-w-md">
+        <form action="../../login.php" method="POST" class="w-full max-w-md">
          
           <div class="mb-4">
             <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
@@ -29,7 +27,7 @@
          
           <div class="mb-6">
             <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
-            <input id="password" name="password" type="password" class="input input-bordered w-full mt-1" placeholder="Ingresa tu contraseña" required>
+            <input id="password" name="password" type="text" class="input input-bordered w-full mt-1" placeholder="Ingresa tu contraseña" required>
           </div>
 
           

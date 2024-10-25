@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 <nav class="relative w-full h-[5rem] bg-color">
   <!-- Nav bar Responsive -->
   <div class="md:hidden sm:flex rounded-box">
@@ -37,11 +39,17 @@
       </div>
       <div class="flex-none text-white">
         <ul class="menu menu-horizontal px-1">
-          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Log_in/POP-UP.php">INICIO SESSION</a></li>
-          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Productos.php">PRODUCTOS</a></li>
+          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="../../../CostaAzul/components/Log_in/POP-UP.php">INICIO SESSION</a></li>
+          <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="../../../CostaAzul/servicios/productos.php">PRODUCTOS</a></li>
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Productos.php">NOSOTROS</a></li>
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Galeria.php">GALERIA</a></li>
           <li><a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="components/Productos/Contactanos.php">CONTACTENOS</a></li>
+          <li>
+            <a class="btn btn-ghost hover:border-gray-500 hover:bg-gray-500" href="path-to-cart">
+              <i class="fas fa-shopping-cart"></i> CARRITO
+            </a>
+          </li>
+
         </ul>
       </div>
     </div>

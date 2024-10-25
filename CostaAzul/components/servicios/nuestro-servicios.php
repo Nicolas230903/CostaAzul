@@ -124,7 +124,7 @@
           </p>
           <div class="card-actions justify-end">
    
-              <a class="btn btn-primary px-4" href="./servicios/estudio-contable.html">Ver más</a>
+              <a class="btn btn-primary px-4" href="./servicios/productos.php">Ver más</a>
    
           </div>
         </div>

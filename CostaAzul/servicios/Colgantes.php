@@ -1,9 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<?php
+include_once('../../CostaAzul/Conexion/conexion.php');
+
+    $pdo = conectar();
+    $GetProd = $pdo->prepare("SELECT * from Productos");
+    $GetProd->execute();
+
+    $lista = $GetProd->fetchAll(PDO::FETCH_ASSOC);
+    foreach($lista as $row){
+
+    }
+  ?>
+  <!DOCTYPE html>
+<html lang="es" data-theme="garden">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costa Azul</title>
+  <link rel="icon" href="../images/Inicio_img.ico">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="../index.js" type="text/javascript" defer></script>
@@ -112,10 +127,75 @@
     }
   </style>
 </head>
-<body>
-<navbar-component class="h-full w-full" src="../navbar/navbar.php" data-color="black">
+
+<body class="w-full max-w-screen min-h-screen h-screen ">
+  <navbar-component class="h-full w-full" src="../components/navbar/navbar.php" data-color="black">
   </navbar-component>
+  <div class="flex justify-between items-center">
+    <h1 class="text-4xl font-bold mx-auto pt-4 underline underline-offset-4 ...">Ventas de Iluminacion</h1>
+</div>
+
+<div class="hidden md:grid">
+  <div class="px-40 py-6">
   <div class="row">
+    <!-- Card 1 -->
+    <div class="card-prod">
+      <figcaption class="figcaptu">
+         <?php echo $row['Codigo'] ?>
+      </figcaption>
+      <div class="img-container">
+        <img src="<?php echo $row['Imagen'] ?>" alt="Imagen de Nórdica" />
+        <div class="overlay">
+          <a class="btn" href="components/Productos/Nordicas.php">más info</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Nordicas
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="../../CostaAzul/components/Productos/Nordicas.php">más info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Colgantes
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="../../CostaAzul/components/Productos/Colgantes.php">más info</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Colgantes
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="../../CostaAzul/components/Productos/Colgantes.php">más info</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puedes agregar más cards aquí con el mismo estilo -->
+  </div>
+  </div>
+</div>
+
+  <div class="md:hidden h-auto">
+    <div class="p-6">
+    <div class="row">
     <!-- Card 1 -->
     <div class="card-prod">
       <figcaption class="figcapt">
@@ -132,12 +212,12 @@
     <!-- Card 2 -->
     <div class="card-prod">
       <figcaption class="figcapt">
-        Colgantes
+        Nordicas
       </figcaption>
       <div class="img-container">
         <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
         <div class="overlay">
-          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
+          <a class="btn" href="../../CostaAzul/components/Productos/Nordicas.php">más info</a>
         </div>
       </div>
     </div>
@@ -149,7 +229,7 @@
       <div class="img-container">
         <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
         <div class="overlay">
-          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
+          <a class="btn" href="../../CostaAzul/components/Productos/Colgantes.php">más info</a>
         </div>
       </div>
     </div>
@@ -161,13 +241,17 @@
       <div class="img-container">
         <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
         <div class="overlay">
-          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
+          <a class="btn" href="../../CostaAzul/components/Productos/Colgantes.php">más info</a>
         </div>
       </div>
     </div>
 
     <!-- Puedes agregar más cards aquí con el mismo estilo -->
   </div>
-    <footer-component class="w-auto h-100 md:h-[50%]" src="../footer/footer.php"></footer-component>
+    </div>
+  </div>
+  <footer-component class="w-auto h-auto md:h-[50%]" src="../components/footer/footer.php"></footer-component>
+
 </body>
+
 </html>

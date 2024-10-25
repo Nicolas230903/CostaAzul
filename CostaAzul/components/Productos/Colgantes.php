@@ -15,7 +15,12 @@ include_once('../../Conexion/conexion.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card con Hover</title>
+  <title>Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../index.js" type="text/javascript" defer></script>
+  <script src="../components/navbar/navbar.js" type="text/javascript" defer></script>
+  <script src="../components/footer/footer.js" type="text/javascript" defer></script>
   <style>
     /* Contenedor de las tarjetas */
     .row {
@@ -51,10 +56,10 @@ include_once('../../Conexion/conexion.php');
     }
 
     /* Título o caption */
-    .figcaptu {
+    .figcapt {
       font-size: 18px;
       font-weight: bold;
-      color: black;
+      color: #f7952e;
       margin: 10px 0;
       text-align: left;
       padding-left: 10px; /* Un poco más a la izquierda */
@@ -120,9 +125,9 @@ include_once('../../Conexion/conexion.php');
   </style>
 </head>
 <body>
+<navbar-component class="h-full w-full" src="../navbar/navbar.php" data-color="black">
+  </navbar-component>
   <div class="row">
-
-
     <!-- Card 1 -->
     <div class="card-prod">
       <figcaption class="figcaptu">
@@ -151,19 +156,30 @@ include_once('../../Conexion/conexion.php');
 
     <div class="card-prod">
       <figcaption class="figcapt">
-        Nordicas
+        Colgantes
       </figcaption>
       <div class="img-container">
         <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
         <div class="overlay">
-          <a class="btn" href="components/Productos/Nordicas.php">más info</a>
+          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
         </div>
       </div>
     </div>
 
-
+    <div class="card-prod">
+      <figcaption class="figcapt">
+        Colgantes
+      </figcaption>
+      <div class="img-container">
+        <img src="./images/DERECHO.png" alt="Imagen de Colgantes" />
+        <div class="overlay">
+          <a class="btn" href="components/Productos/Colgantes.php">más info</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Puedes agregar más cards aquí con el mismo estilo -->
   </div>
+    <footer-component class="w-auto h-100 md:h-[50%]" src="../footer/footer.php"></footer-component>
 </body>
 </html>

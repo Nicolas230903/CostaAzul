@@ -4,7 +4,7 @@ class FooterComponent extends HTMLElement {
     }
     
     connectedCallback() {
-        fetch("./components/footer/footer.php")
+        fetch("../../CostaAzul/components/footer/footer.php")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(
