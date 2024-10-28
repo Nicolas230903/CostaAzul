@@ -23,7 +23,7 @@ if ( $_SERVER["REQUEST_METHOD"] == "POST") {
 	};
 
 	if ($_COOKIE['Usuario_ID'] == ""){
-			header("location:index.php?error=256");
+			header("location:index.php?error=AGUS");
 	} else {
 		header("Location: index.php?nivel=" . urlencode($row_Usuario['Nivel']));
 	};
