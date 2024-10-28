@@ -12,20 +12,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Costa Azul</title>
   <link rel="icon" href="images/Inicio_img.ico">
+  
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
   <link href="./css/index.css" rel="stylesheet" type="text/css" />
+
+  <!-- Bootstrap JavaScript (Without defer to ensure immediate functionality) -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Tailwind CSS (if needed) -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Scripts -->
   <script src="./index.js" type="text/javascript" defer></script>
   <script src="./components/header/header.js" type="text/javascript" defer></script>
-  <script src="./components/navbar/navbar.js" type="text/javascript" defer></script>
+  <script src="./components/navbar/navbar.js" type="text/javascript" defer></script> 
   <script src="./components/servicios/servicios.js" type="text/javascript" defer></script>
   <script src="./components/sobre-nosotros/sobre-nosotros.js" type="text/javascript" defer></script>
   <script src="./components/contactanos/contactanos.js" type="text/javascript" defer></script>
   <script src="../CostaAzul/components/footer/footer.js" type="text/javascript" defer></script>
-  <!-- <script src="./components/Productos/Productos.js" type="text/javascript" defer></script> -->
-  <!-- <script src="./components/Descargas/script.js" type="text/javascript" defer></script> -->
-
 </head>
+
+
 
 <body class="w-full max-w-screen min-h-screen h-screen">
   <header-component class="flex w-full h-full"></header-component>

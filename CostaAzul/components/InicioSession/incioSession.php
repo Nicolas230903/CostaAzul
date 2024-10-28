@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" type="text/css" />
-    <!-- <style>
+     <style>
         /* Estilo para el modal */
         .modal {
             position: fixed;
@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             text-decoration: none;
             cursor: pointer;
         }
-    </style> -->
+    </style> 
 </head>
 <body>
     <h1 class="text-center">Bienvenido a Costa Azul</h1>
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Modal -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Iniciar Sesión</h2>
+            <h2>Registro de Usuario</h2>
             <form id="form1" name="form1" method="POST" action="">
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>

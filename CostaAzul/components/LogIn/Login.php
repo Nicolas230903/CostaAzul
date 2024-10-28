@@ -1,19 +1,19 @@
 <?php
 // login.php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $_POST['email2'];
+    $password = $_POST['password2'];
     $rememberMe = isset($_POST['remember_me']); // Verificar si la opción 'Recordarme' está marcada
 
     require_once('config.php');
 
-    $query = "SELECT * FROM usuarios WHERE email = :email";
+    $query = "SELECT * FROM usuarios WHERE email2 = :email";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(':email', $email);
     $stmt->execute();
     $user = $stmt->fetch();
 
-    if ($user && password_verify($password, $user['password'])) {
+    if ($user && password_verify($password, $user['password2'])) {
         // Inicio de sesión exitoso
         session_start();
         $_SESSION['user_id'] = $user['id'];
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // }
 
         // Redirigir al dashboard
-        header("Location: /dashboard/dashboard.php"); // Asegúrate de que la ruta esté correcta según tu estructura de carpetas
+        header("components/Dashboard/DashBoard.php"); // Asegúrate de que la ruta esté correcta según tu estructura de carpetas
         exit;
     } else {
         // Credenciales incorrectas
