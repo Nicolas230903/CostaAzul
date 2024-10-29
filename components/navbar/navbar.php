@@ -43,7 +43,7 @@ echo "Nivel del usuario: " . htmlspecialchars($nivel);
 
 <!-- Modal -->
 <div id="myModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-90 hidden z-50">
-  <form id="form" name="form" method="post" action="../../../CostaAzul/login.php">
+  <form id="form" name="form" method="post" action="../../login.php">
     <div class="bg-white rounded-lg shadow-lg w-96">
       <div class="flex justify-between items-center p-4 border-b border-gray-300">
         <h3 class="text-lg font-semibold">Iniciar Sesión</h3>

@@ -1,1 +1,1 @@
-const BASEPATH = "https://CostaAzul.com.ar";
+const BASEPATH = "http://localhost:3000/index.php";

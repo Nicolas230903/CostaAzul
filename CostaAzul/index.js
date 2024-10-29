@@ -1,1 +1,0 @@
-const BASEPATH = "https://CostaAzul.com.ar";
